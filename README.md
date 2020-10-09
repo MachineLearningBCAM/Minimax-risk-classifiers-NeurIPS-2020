@@ -19,11 +19,13 @@ For the LPC instance we also need to know:
 * k = maximum number of univariate thresholds for each dimension
 * d = number of rows
 
-MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), s=s)
-MRC_model.fit(X_train, y_train)
+MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), s=s)<br/>
+
+To train our MRC classifier, we have to pass as parameters, the training data set (X_train) with the predictor variables and the label of each case (y_train) <br/>
+MRC_model.fit(X_train, y_train)<br/>
 
 # Evaluation
-
+To collect the results predicted by our classifier, we run the following line:
 y_pred= MRC_model.predict(X_test)
 
 
