@@ -5,8 +5,22 @@ Supervised classification techniques use training samples to find classification
 # Requirements
 
 # Training
+To create an instance of the MRC classifier we must first define the following parameters:
+* r: the number of values of class variable
+* phi: Features of the LPC
+
+For the LPC instance we also need to know:
+* m = number of product thresholds
+* k = maximum number of univariate thresholds for each dimension
+* d = number of rows
+
+MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), s=s)
+MRC_model.fit(X_train, y_train)
 
 # Evaluation
+
+y_pred= MRC_model.predict(X_test)
+
 
 # Results
 
