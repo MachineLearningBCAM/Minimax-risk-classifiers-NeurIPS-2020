@@ -12,7 +12,7 @@ We will need have installed the following libraries:
 # Training
 To create an instance of the MRC classifier we must first define the following parameters:
 * r: the number of values of class variable
-* phi: Features of the LPC
+* phi: Features of the MRC
 
 For the LPC instance we also need to know:
 * m = number of product thresholds
