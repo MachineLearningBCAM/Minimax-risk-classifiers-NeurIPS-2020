@@ -15,6 +15,7 @@ We will need have installed the following libraries:
 To create an instance of the MRC classifier we must first define the following parameters:
 * r: number of different classes in the prediction
 * phi: Features of the MRC
+* s: parameter describing the size of interval estimates
 
 For the MRC instance we also need to know:
 * m = number of product thresholds
