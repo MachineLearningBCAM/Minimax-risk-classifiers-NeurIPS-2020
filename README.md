@@ -30,6 +30,7 @@ MRC_model.fit(X_train, y_train)<br/>
 To collect the results predicted by our classifier, we run the following line:
 y_pred= MRC_model.predict(X_test)
 
+# Pre-trained models
 
 # Results
 <table >
@@ -138,4 +139,6 @@ y_pred= MRC_model.predict(X_test)
 </table>
 
 
-# Contributing
+# Support
+
+# Authors
