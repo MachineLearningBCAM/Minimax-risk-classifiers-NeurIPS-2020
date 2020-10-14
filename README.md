@@ -32,7 +32,7 @@ y_pred= MRC_model.predict(X_test)
 
 
 # Results
-<table>
+<table >
     <tr>
         <th>Data set</th>
         <th>LB</th>
@@ -47,7 +47,7 @@ y_pred= MRC_model.predict(X_test)
         <th>MEM</th>
     </tr>
     <tr>
-        <td>Mammog.</td>
+        <td style="font-weight: bold"Mammog.</td>
         <td>.16</td>
         <td>.18 ± .04</td>
         <td>.21</td>
@@ -60,7 +60,7 @@ y_pred= MRC_model.predict(X_test)
         <td>.22 ± .04</td>
     </tr>
     <tr>
-        <td>Haberman</td>
+        <td style="font-weight: bold"aberman</td>
         <td>.24</td>
         <td>.27 ± .03</td>
         <td>.27</td>
@@ -73,7 +73,7 @@ y_pred= MRC_model.predict(X_test)
         <td>.27 ± .02</td>
     </tr>
     <tr>
-        <td>Indian liv.</td>
+        <td style="font-weight: bold"Indian liv.</td>
         <td>.28</td>
         <td>.29 ± .01</td>
         <td>.30</td>
@@ -86,7 +86,7 @@ y_pred= MRC_model.predict(X_test)
         <td>.29 ± .01</td>
     </tr>
     <tr>
-        <td>Diabetes</td>
+        <td style="font-weight: bold"Diabetes</td>
         <td>.22</td>
         <td>.26 ± .03</td>
         <td>.28</td>
@@ -99,7 +99,7 @@ y_pred= MRC_model.predict(X_test)
         <td>.34 ± .04</td>
     </tr>
     <tr>
-        <td>Credit</td>
+        <td style="font-weight: bold"Credit</td>
         <td>.12</td>
         <td>.15 ± .18</td>
         <td>.17</td>
@@ -112,7 +112,7 @@ y_pred= MRC_model.predict(X_test)
         <td>.14 ± .04</td>
     </tr>
     <tr>
-        <td>Glass</td>
+        <td style="font-weight: bold">Glass</td>
         <td>.22</td>
         <td>.36 ± .08</td>
         <td>.47</td>
@@ -124,8 +124,8 @@ y_pred= MRC_model.predict(X_test)
         <td>.42 ± .14</td>
         <td>.35 ± .08</td>
     </tr>
-    <tr>
-        <td>Avg. rank</td>
+    <tr style="text-align: center">
+        <td style="text-align: left; font-weight: bold">Avg. rank</td>
         <td colspan="3">2.7</td>
         <td>5.1</td>
         <td>7.0</td>
