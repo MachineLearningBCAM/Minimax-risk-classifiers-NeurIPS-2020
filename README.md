@@ -15,14 +15,14 @@ We will need have installed the following libraries:
 To create an instance of the MRC classifier we must first define the following parameters:
 * r: number of different classes in the prediction
 * phi: Features of the MRC
-* s: parameter describing the size of interval estimates
+* lambda_mrc: parameter describing the size of interval estimates
 
 For the MRC instance we also need to know:
 * m = number of product thresholds
 * k = maximum number of univariate thresholds for each dimension
 * d = number of predictor variables / number of columns of dataset X
 
-MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), s=s)<br/>
+MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), lambda_mrc=lambda_mrc)<br/>
 
 To train our MRC classifier, we have to pass as parameters, the training data set (X_train) with the predictor variables and the label of each case (y_train) <br/>
 MRC_model.fit(X_train, y_train)<br/>
