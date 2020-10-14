@@ -48,6 +48,90 @@ y_pred= MRC_model.predict(X_test)
         <td>Mammog.</td>
         <td>.16</td>
         <td>.18 ± .04</td>
+        <td>.21</td>
+        <td>.20 ± .04</td>
+        <td>.24 ± .04</td>
+        <td>.22 ± .04</td>
+        <td>.18 ± .03</td>
+        <td>.21 ± .06</td>
+        <td>.18 ± .03</td>
+        <td>.22 ± .04</td>
+    </tr>
+    <tr>
+        <td>Haberman</td>
+        <td>.24</td>
+        <td>.27 ± .03</td>
+        <td>.27</td>
+        <td>.24 ± .03</td>
+        <td>.39 ± .14</td>
+        <td>.30 ± .07</td>
+        <td>.26 ± .04</td>
+        <td>.35 ± .12</td>
+        <td>.25 ± .04</td>
+        <td>.27 ± .02</td>
+    </tr>
+    <tr>
+        <td>Indian liv.</td>
+        <td>.28</td>
+        <td>.29 ± .01</td>
+        <td>.30</td>
+        <td>.44 ± .08</td>
+        <td>.35 ± .09</td>
+        <td>.34 ± .05</td>
+        <td>.29 ± .02</td>
+        <td>.30 ± .05</td>
+        <td>.29 ± .01</td>
+        <td>.29 ± .01</td>
+    </tr>
+    <tr>
+        <td>Diabetes</td>
+        <td>.22</td>
+        <td>.26 ± .03</td>
+        <td>.28</td>
+        <td>.26 ± .03</td>
+        <td>.29 ± .07</td>
+        <td>.26 ± .05</td>
+        <td>.24 ± .04</td>
+        <td>.26 ± .05</td>
+        <td>.24 ± .04</td>
+        <td>.34 ± .04</td>
+    </tr>
+    <tr>
+        <td>Credit</td>
+        <td>.12</td>
+        <td>.15 ± .18</td>
+        <td>.17</td>
+        <td>.22 ± .07</td>
+        <td>.22 ± .14</td>
+        <td>.14 ± .09</td>
+        <td>.16 ± .17</td>
+        <td>.17 ± .15</td>
+        <td>.15 ± .18</td>
+        <td>.14 ± .04</td>
+    </tr>
+    <tr>
+        <td>Glass</td>
+        <td>.22</td>
+        <td>.36 ± .08</td>
+        <td>.47</td>
+        <td>.64 ± .04</td>
+        <td>.39 ± .18</td>
+        <td>.34 ± .08</td>
+        <td>.34 ± .11</td>
+        <td>.40 ± .14</td>
+        <td>.42 ± .14</td>
+        <td>.35 ± .08</td>
+    </tr>
+    <tr>
+        <td>Avg. rank</td>
+        <td colspan="3">2.7</td>
+        <td>5.1</td>
+        <td>7.0</td>
+        <td>3.8</td>
+        <td>2.0</td>
+        <td>5.3</td>
+        <td>2.5</td>
+        <td>3.8</td>
     </tr>
 </table>
 
