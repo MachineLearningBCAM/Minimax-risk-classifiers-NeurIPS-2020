@@ -141,5 +141,12 @@ y_pred= MRC_model.predict(X_test)
 
 
 # Support
+[Adrian Diaz Tajuelo](mailto:adiaz@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)
+
+BCAM-Basque Center of Applied Mathematics
+École Polytechnique Fédérale de Lausanne
 
 # Authors
+Aritz Pérez
+Andrea Zanoni
+Adrian Diaz Tajuelo
