@@ -16,7 +16,7 @@ To create an instance of the MRC classifier we must first define the following p
 * r: number of different classes in the prediction
 * phi: Features of the MRC
 
-For the LPC instance we also need to know:
+For the MRC instance we also need to know:
 * m = number of product thresholds
 * k = maximum number of univariate thresholds for each dimension
 * d = number of predictor variables / number of columns of dataset X
