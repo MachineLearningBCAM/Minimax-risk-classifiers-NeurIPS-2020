@@ -80,7 +80,7 @@ def ICML20_error(lambda_mrc=0.25, mumVars= 400, random_seed= 1):
               " upper= " + str(upper/10)+"\t lower= " + str(lower/10) + "\n ############## \n")
 
 
-def ICML20_bounds(s=0.25, mumVars= 400, seed= 1):
+def ICML20_bounds(lambda_mrc=0.25, mumVars= 400, seed= 1):
     '''
     Experimentation: ICML 2020
     2nd experiment: evoution of the upper-lower bounds with respect to the size of the training set
@@ -109,7 +109,7 @@ def ICML20_bounds(s=0.25, mumVars= 400, seed= 1):
         print(" ############## \n" + dataNameBounds[j] + " n= " + str(n) + " , d= " + str(d) + ", cardY= " + str(
             r) + "\n ############## \n")
 
-        clf = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars / r), k=np.max((3,int(mumVars/(r*d))))), s=s)
+        clf = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars / r), k=np.max((3,int(mumVars/(r*d))))), lambda_mrc=lambda_mrc)
 
         # Preprocess
         trans = SimpleImputer(strategy='median')
