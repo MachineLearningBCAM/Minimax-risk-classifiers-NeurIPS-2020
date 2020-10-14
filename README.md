@@ -30,7 +30,26 @@ y_pred= MRC_model.predict(X_test)
 
 
 # Results
-table
+<table>
+    <tr>
+        <th>Data set</th>
+        <th>LB</th>
+        <th>MRC</th>
+        <th>UB</th>
+        <th>QDA</th>
+        <th>DT</th>
+        <th>KNN</th>
+        <th>SVM</th>
+        <th>RF</th>
+        <th>AMC</th>
+        <th>MEM</th>
+    </tr>
+    <tr>
+        <td>Mammog.</td>
+        <td>.16</td>
+        <td>.18 ± .04</td>
+    </tr>
+</table>
 
 
 # Contributing
