@@ -18,9 +18,9 @@ class MRC(BaseEstimator, ClassifierMixin):
 
         :param r: the number of values of class variable
         :param phi: Features of the MRC
-        :param equality: the type of Learning. If true the LPC is asymptotically calibrated, if false the LPC is
+        :param equality: the type of Learning. If true the MRC is asymptotically calibrated, if false the MRC is
         approximately calibrated.
-        :param deterministic: if deterministic is false the LPC decision function is arg_c rand p(c|x) and if it is true
+        :param deterministic: if deterministic is false the MRC decision function is arg_c rand p(c|x) and if it is true
         the decision function is arg_c max p(c|x)
         :param seed: random seed
         '''

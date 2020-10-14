@@ -65,7 +65,7 @@ class Phi(object):
     def getConstr(self):
         '''
         Get the constraints required for determining the uncertainty set using phi with liner probabilistic
-        classifiers, LPC.
+        classifiers, MRC.
         :return:
         '''
 

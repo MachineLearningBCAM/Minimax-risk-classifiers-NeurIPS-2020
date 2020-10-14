@@ -181,9 +181,9 @@ class PhiThreshold(Phi):
     def getLearnConstr(self, linConstr):
         '''
         Get the constraints required for determining the uncertainty set using phi with liner probabilistic
-        classifiers, LPC.
+        classifiers, MRC.
         :return: The index of the variables that have to be added for creating the constraints of for learning
-        the LPC. Two type of constraints: 1.exponential and 2:linear
+        the MRC. Two type of constraints: 1.exponential and 2:linear
 
         FORMAT:
         1.-Exponential: For each x with different phi_x average, value of F_x over every subset of the class values.
@@ -210,9 +210,9 @@ class PhiThreshold(Phi):
     def getLowerConstr(self):
         '''
         Get the constraints required for determining the uncertainty set using phi with liner probabilistic
-        classifiers, LPC.
+        classifiers, MRC.
         :return: The index of the variables that have to be added for creating the constraints of for learning
-        the LPC. Two type of constraints: 1.exponential and 2:linear
+        the MRC. Two type of constraints: 1.exponential and 2:linear
 
         FORMAT:
         1.-Exponential: For each x with different phi_x average, value of F_x over every subset of the class values.
