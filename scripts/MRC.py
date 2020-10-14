@@ -104,9 +104,6 @@ class MRC(BaseEstimator, ClassifierMixin):
         # Solve the problem
         prob = cvx.Problem(objective, constraints)
         _ = prob.solve(verbose=False)
-        #prob.solve(solver='ECOS_BB', verbose=False)
-        #GLPK
-        #ECOS_BB
 
         # Optimal values
         self.mu_a= np.round(mu_a.value, 5)
@@ -161,7 +158,6 @@ class MRC(BaseEstimator, ClassifierMixin):
         # Solve the problem
         prob = cvx.Problem(objective, constraints)
         _ = prob.solve(verbose=False)
-        #prob.solve(solver='ECOS_BB', verbose=False)
 
         # Upper bound
         self.mu_a_l= low_mu_a.value

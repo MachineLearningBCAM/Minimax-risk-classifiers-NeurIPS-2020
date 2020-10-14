@@ -8,7 +8,7 @@ import time
 
 #import the datasets
 from datasets import *
-
+# dont show the warnings
 import warnings
 warnings.filterwarnings("ignore")
 
