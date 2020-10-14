@@ -13,7 +13,7 @@ class MRC(BaseEstimator, ClassifierMixin):
     Submitted to ICML 2020
     '''
 
-    def __init__(self, r, phi, equality=False, s=0.25, deterministic=False, seed=0):
+    def __init__(self, r, phi, equality=False, lambda_mrc=0.25, deterministic=False, seed=0):
         '''
 
         :param r: the number of values of class variable
@@ -27,7 +27,7 @@ class MRC(BaseEstimator, ClassifierMixin):
         self.r= r
         self.phi = phi
         self.equality = equality
-        self.s = s
+        self.lambda_mrc = lambda_mrc
         self.deterministic = deterministic
         self.seed= seed
         if self.r> 4:
@@ -71,8 +71,8 @@ class MRC(BaseEstimator, ClassifierMixin):
         aux= time.time()
         self.tau= self.phi.estExp(X,Y)
 
-        self.a= np.clip(self.tau- self.s/np.sqrt(n),0,1)
-        self.b= np.clip(self.tau+ self.s/np.sqrt(n),0,1)
+        self.a= np.clip(self.tau - self.lambda_mrc / np.sqrt(n), 0, 1)
+        self.b= np.clip(self.tau + self.lambda_mrc / np.sqrt(n), 0, 1)
 
         # Variables
         mu_a = cvx.Variable(m)

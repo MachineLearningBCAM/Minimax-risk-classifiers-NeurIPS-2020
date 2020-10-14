@@ -20,7 +20,7 @@ loadersBounds = [load_adult, load_magic]
 dataNameBounds= ["adult", "magic"]
 
 
-def ICML20_error(s=0.25, mumVars= 400, random_seed= 1):
+def ICML20_error(lambda_mrc=0.25, mumVars= 400, random_seed= 1):
     '''
     Experimentation: ICML 2020
     1st experiment: error estimation with bounds
@@ -43,7 +43,7 @@ def ICML20_error(s=0.25, mumVars= 400, random_seed= 1):
         print(" ############## \n" + dataName[j] + " n= " + str(n) + " , d= " + str(d) + ", cardY= "+ str(r))
 
 
-        clf = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), s=s)
+        clf = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), lambda_mrc=lambda_mrc)
 
         # Preprocess
         trans = SimpleImputer(strategy='median')
