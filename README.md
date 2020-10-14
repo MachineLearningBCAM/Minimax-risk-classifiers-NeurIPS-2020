@@ -11,13 +11,13 @@ We will need have installed the following libraries:
 
 # Training
 To create an instance of the MRC classifier we must first define the following parameters:
-* r: the number of values of class variable
+* r: number of different classes in the prediction
 * phi: Features of the MRC
 
 For the LPC instance we also need to know:
 * m = number of product thresholds
 * k = maximum number of univariate thresholds for each dimension
-* d = number of rows
+* d = number of predictor variables / number of columns of dataset X
 
 MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), s=s)<br/>
 
@@ -30,7 +30,7 @@ y_pred= MRC_model.predict(X_test)
 
 
 # Results
-
+table
 
 
 # Contributing
