@@ -1,9 +1,6 @@
 import numpy as np
-
-#from minimax-risk-classifier/scripts/phiThreshold import PhiThreshold
 from scripts.MRC import MRC
 from scripts.phiThreshold import PhiThreshold
-#from MRC import MRC
 from sklearn.model_selection import StratifiedKFold
 from sklearn.impute import SimpleImputer
 
@@ -11,6 +8,9 @@ import time
 
 #import the datasets
 from datasets import *
+
+import warnings
+warnings.filterwarnings("ignore")
 
 #data sets
 loaders = [load_glass, load_mammographic, load_haberman, load_indian_liver, load_diabetes, load_credit]

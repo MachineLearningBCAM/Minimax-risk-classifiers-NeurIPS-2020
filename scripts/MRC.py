@@ -17,7 +17,7 @@ class MRC(BaseEstimator, ClassifierMixin):
         '''
 
         :param r: the number of values of class variable
-        :param phi: Features of the LPC
+        :param phi: Features of the MRC
         :param equality: the type of Learning. If true the LPC is asymptotically calibrated, if false the LPC is
         approximately calibrated.
         :param deterministic: if deterministic is false the LPC decision function is arg_c rand p(c|x) and if it is true
@@ -103,7 +103,8 @@ class MRC(BaseEstimator, ClassifierMixin):
 
         # Solve the problem
         prob = cvx.Problem(objective, constraints)
-        _ = prob.solve(solver='ECOS_BB', verbose=False)
+        _ = prob.solve(verbose=False)
+        #prob.solve(solver='ECOS_BB', verbose=False)
         #GLPK
         #ECOS_BB
 
@@ -159,7 +160,8 @@ class MRC(BaseEstimator, ClassifierMixin):
 
         # Solve the problem
         prob = cvx.Problem(objective, constraints)
-        _ = prob.solve(solver='ECOS_BB', verbose=False)
+        _ = prob.solve(verbose=False)
+        #prob.solve(solver='ECOS_BB', verbose=False)
 
         # Upper bound
         self.mu_a_l= low_mu_a.value
