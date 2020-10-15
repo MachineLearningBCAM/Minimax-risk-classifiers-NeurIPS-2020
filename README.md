@@ -4,7 +4,7 @@
 Supervised classification techniques use training samples to find classification rules with small expected 0-1 loss. Conventional methods achieve efficient learn- ing and out-of-sample generalization by minimizing surrogate losses over specific families of rules. This paper presents minimax risk classifiers (MRCs) that do not rely on a choice of surrogate loss and family of rules. MRCs achieve efficient learning and out-of-sample generalization by minimizing worst-case expected 0-1 loss w.r.t. uncertainty sets that are defined by linear constraints and include the true underlying distribution. In addition, MRCs’ learning stage provides perfor- mance guarantees as lower and upper tight bounds for expected 0-1 loss. We also present MRCs’ finite-sample generalization bounds in terms of training size and smallest minimax risk, and show their competitive classification performance w.r.t. state-of-the-art techniques using benchmark datasets.<br/>
 <br/>
 
-![thumbnail](https://github.com/AdrianDiaz18/minimax-risk-classifier/blob/main/docs/images/thumbnail%20image%20Minimax%20Classification%20with%200-1%20Loss%20and%20Performance%20Guarantees.png)
+![thumbnail](https://github.com/MachineLearningBCAM/Minimax-risk-classifiers-NeurIPS-2020/blob/main/docs/images/thumbnail%20image%20Minimax%20Classification%20with%200-1%20Loss%20and%20Performance%20Guarantees.png)
 
 <br/>
 
@@ -19,18 +19,20 @@ We will need have installed the following libraries:
 To create an instance of the MRC classifier we must first define the following parameters:
 * r: number of different classes in the prediction
 * phi: Features of the MRC
-* lambda_mrc: parameter describing the size of interval estimates
+* lambda_mrc: parameter describing the size of interval estimates (default value, 0.25)
 
 For the MRC instance we also need to know:
-* m = number of product thresholds
+* mumVars = number of product thresholds (recomended value, 400)
 * k = maximum number of univariate thresholds for each dimension
 * d = number of predictor variables / number of columns of dataset X
-
+'''
 MRC_model = MRC(r=r, phi=PhiThreshold(r=r, m=int(mumVars/r), k=int(mumVars/(r*d))), lambda_mrc=lambda_mrc)<br/>
+'''
 
-To train our MRC classifier, we have to pass as parameters, the training data set (X_train) with the predictor variables and the label of each case (y_train) <br/>
+To train our MRC classifier, we have to pass as inputs, the training data set (X_train) with the predictor variables and the label of each case (y_train) <br/>
+'''
 MRC_model.fit(X_train, y_train)<br/>
-
+'''
 # Evaluation
 To collect the results predicted by our classifier, we run the following line:
 y_pred= MRC_model.predict(X_test)
