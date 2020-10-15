@@ -146,9 +146,9 @@ y_pred= MRC_model.predict(X_test)
 
 # Support
 Aritz Pérez: [aperez@bcamath.org](mailto:aperez@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
-[Andrea Zanoni](mailto:andrea.zanoni@epfl.ch?subject=[GitHub]%20Source%20Han%20Sans)<br/>
-[Adrian Diaz](mailto:adiaz@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
-[Santiago Mazuelas](mailto:smazuelas@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
+Andrea Zanoni: [andrea.zanoni@epfl.ch](mailto:andrea.zanoni@epfl.ch?subject=[GitHub]%20Source%20Han%20Sans)<br/>
+Adrian Diaz Tajuelo: [adiaz@bcamath.org](mailto:adiaz@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
+Santiago Mazuelas: [smazuelas@bcamath.org](mailto:smazuelas@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
 
 # Authors
 Aritz Pérez &#124; BCAM-Basque Center of Applied Mathematics<br/>
