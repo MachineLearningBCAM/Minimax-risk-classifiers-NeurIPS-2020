@@ -38,6 +38,12 @@ y_pred= MRC_model.predict(X_test)
 # Pre-trained models
 
 # Results
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 <table >
     <tr>
         <th>Data set</th>
@@ -53,7 +59,7 @@ y_pred= MRC_model.predict(X_test)
         <th>MEM</th>
     </tr>
     <tr>
-        <td style="font-weight: bold">**Mammog.**</td>
+        <td style="font-weight: bold">Mammog.</td>
         <td>.16</td>
         <td>.18 ± .04</td>
         <td>.21</td>
