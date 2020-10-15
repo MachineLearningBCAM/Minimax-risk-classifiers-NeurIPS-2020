@@ -38,7 +38,9 @@ To collect the results predicted by our classifier, we run the following line:
 ```
 y_pred= MRC_model.predict(X_test)
 ```
-# Pre-trained models
+
+<!-- # Pre-trained models -->
+
 
 # Results
 <table >
