@@ -148,12 +148,13 @@ y_pred= MRC_model.predict(X_test)
 [Aritz Pérez](mailto:aperez@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
 [Andrea Zanoni](mailto:andrea.zanoni@epfl.ch?subject=[GitHub]%20Source%20Han%20Sans)<br/>
 [Adrian Diaz Tajuelo](mailto:adiaz@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
+[Santiago Mazuelas](mailto:smazuelas@bcamath.org?subject=[GitHub]%20Source%20Han%20Sans)<br/>
 
 # Authors
 Aritz Pérez &#124; BCAM-Basque Center of Applied Mathematics<br/>
 Andrea Zanoni &#124; École Polytechnique Fédérale de Lausanne<br/>
 Adrian Diaz Tajuelo &#124; BCAM-Basque Center of Applied Mathematics<br/>
-Santiago Mazuelas Franco &#124; BCAM-Basque Center of Applied Mathematics<br/>
+Santiago Mazuelas &#124; BCAM-Basque Center of Applied Mathematics<br/>
 
 # License
 minimax risk classifiers (MRC) is released under the MIT license.
