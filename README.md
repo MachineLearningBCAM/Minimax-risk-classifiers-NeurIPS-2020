@@ -15,6 +15,13 @@ We will need have installed the following libraries:
 * sklearn
 * cvxpy
 
+We can install the requirements directly from the file "requirements.txt"
+
+```
+pip install -r requirements.txt
+```
+
+
 # Training
 To create an instance of the MRC classifier we must first define the following parameters:
 * r: number of different classes in the prediction
