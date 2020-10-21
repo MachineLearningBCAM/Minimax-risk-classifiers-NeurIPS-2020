@@ -46,8 +46,16 @@ To collect the results predicted by our classifier, we run the following line:
 y_pred= MRC_model.predict(X_test)
 ```
 
-<!-- # Pre-trained models -->
+# Pre-trained models
+We have left in the folder "tests/pretrained-models" a pre-trained model to quickly test, the file is "mrc001.sav".
+To use it, just give the test set X as an input value, in the following example, we use the joblib library to import the pre-trained model:
+```
+import joblib
 
+filename = 'pretrained-models/mrc001.sav'
+loaded_model = joblib.load(filename)
+y_pred= loaded_model.predict(X_test)
+```
 
 # Results
 <table >
