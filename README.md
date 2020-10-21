@@ -179,7 +179,7 @@ Santiago Mazuelas &#124; BCAM-Basque Center of Applied Mathematics<br/>
 # License
 minimax risk classifiers (MRC) is released under the MIT license.
 
-# Citation
+# Citing
 ```
 @incollection{MazZanPer:20,
 title = {Minimax Classification with 0-1 Loss and Performance Guarantees},
