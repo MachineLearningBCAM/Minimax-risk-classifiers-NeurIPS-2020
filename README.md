@@ -181,10 +181,12 @@ minimax risk classifiers (MRC) is released under the MIT license.
 
 # Citing
 ```
-@incollection{MazZanPer:20,
-title = {Minimax Classification with 0-1 Loss and Performance Guarantees},
-author = {Santiago Mazuelas and Andrea Zanoni and Aritz Perez},
-booktitle = {Advances in Neural Information Processing Systems 33},
-year = {2020}
+@inproceedings{MazZanPer:20,
+ author = {Santiago Mazuelas and Andrea Zanoni and Aritz P\'{e}rez},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {302--312},
+ title = {Minimax Classification with 0-1 Loss and Performance Guarantees},
+ volume = {33},
+ year = {2020}
 }
 ```
